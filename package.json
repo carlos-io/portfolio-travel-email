@@ -1,0 +1,25 @@
+{
+  "name": "-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "serve": "gulp serve",
+    "watch": "gulp watch",
+    "quickstart": "npm install && gulp && npm run watch"
+  },
+  "keywords": [],
+  "author": "Carlos Velazquez",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "browsersync": "0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^6.1.1"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
