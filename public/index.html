@@ -5,6 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Promo</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <style>
+        /* desktop */
+        @media only screen and (min-width: 600px) {
+            .container {
+                 width: 600px;
+            }
+            .hero-small {
+                display: none;
+            }
+            .hero-large {
+                display: block;
+            }
+        }
+        /* mobile */
+        @media only screen and (max-width: 599px) {
+            .container {
+                 width: 100%;
+            }
+            .hero-small {
+                display: block;
+            }
+            .hero-large {
+                display: none;
+            }
+            .footer-top > td {
+                padding-bottom: 0 !important;
+            }
+            .rewards-slogan-container,
+            .social-media-container,
+            .mobile-app-container {
+                width: 100%;
+                padding-bottom: 10px;
+            }
+            .rewards-slogan-container,
+            .social-media-container {
+                border-bottom: 1px solid #CCCCCC;
+            }
+            .social-media-container,
+            .mobile-app-container {
+                padding-top: 10px;
+            }
+        }
+    </style>
 </head>
 <body style="background: #14214D;">
     <!-- HTML email start -->
@@ -39,7 +82,7 @@
                                 <tr class="logo-container">
                                     <td align="left">
                                         <!-- logo start -->
-                                        <table border="0" cellspacing="0" cellpadding="0" class="logo" width="50%">
+                                        <table border="0" cellspacing="0" cellpadding="0" class="logo" width="100%">
                                             <tr>
                                                 <td>
                                                     <img src="img/logo-RapidRewards.jpg" alt="logo" width="175px">
@@ -50,7 +93,7 @@
                                     </td>
                                     <td align="right" valign="bottom">
                                         <!-- greeting start -->
-                                        <table border="0" cellspacing="0" cellpadding="0" class="greeting" width="50%">
+                                        <table border="0" cellspacing="0" cellpadding="0" class="greeting" width="100%">
                                             <tr>
                                                 <td align="right">
                                                     <h5 style="margin: 0; color: #EABB14; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 600; font-size: 12px;">Good morning!</h5>
@@ -79,7 +122,10 @@
                     <!-- navigation section end -->
                     <!-- hero section start -->
                     <tr class="hero">
-                        <td>
+                        <td class="hero-small">
+                            <img src="img/hero-s.jpg" alt="beach" width="100%">
+                        </td>
+                        <td class="hero-large">
                             <img src="img/hero.jpg" alt="beach" width="100%">
                         </td>
                     </tr>
@@ -100,14 +146,7 @@
                                                 </td>
                                                 <td class="slogan-foreword" valign="top">
                                                     <h4 style="margin: 0; color: #304CB2; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 700; font-size: 14px; line-height: 1.1">Rewards seats only on days ending in "y."</h4>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right: 15px;">
-                                                    &nbsp;
-                                                </td>
-                                                <td class="slogan" style="padding-top: 4px;">
-                                                    <p style="margin: 0; color: black; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 400; font-size: 12px;">That's Trans<span style="font-weight: 700;">fare</span>nt®.</p>
+                                                    <p style="margin: 5px 0 0 0; color: black; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 400; font-size: 12px;">That's Trans<span style="font-weight: 700;">fare</span>nt®.</p>
                                                 </td>
                                             </tr>
                                         </table>
@@ -121,67 +160,75 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <!-- twitter start -->
-                                                    <table border="0" cellspacing="0" cellpadding="0" class="twitter" width="20%" align="left">
+                                                    <!-- social media start -->
+                                                    <table border="0" cellspacing="0" cellpadding="0" width="150px" class="social-media">
                                                         <tr>
-                                                            <td align="left">
-                                                                <a href="https://twitter.com">
-                                                                    <img src="img/ico-twitter.png" alt="twitter" width="22px">
-                                                                </a>
+                                                            <td>
+                                                                <!-- twitter start -->
+                                                                <table border="0" cellspacing="0" cellpadding="0" class="twitter" width="20%" align="left">
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <a href="https://twitter.com">
+                                                                                <img src="img/ico-twitter.png" alt="twitter" width="22px">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <!-- twitter end -->
+                                                                <!-- facebook start -->
+                                                                <table border="0" cellspacing="0" cellpadding="0" class="facebook" width="20%" align="left">
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <a href="https://facebook.com">
+                                                                                <img src="img/ico-facebook.png" alt="facebook" width="22px">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <!-- facebook end -->
+                                                                <!-- instagram start -->
+                                                                <table border="0" cellspacing="0" cellpadding="0" class="instagram" width="20%" align="left">
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <a href="https://instagram.com">
+                                                                                <img src="img/ico-instagram.png" alt="instagram" width="22px">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <!-- instagram end -->
+                                                                <!-- youtube start -->
+                                                                <table border="0" cellspacing="0" cellpadding="0" class="youtube" width="20%" align="left">
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <a href="https://youtube.com">
+                                                                                <img src="img/ico-youtube.png" alt="youtube" width="22px">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <!-- youtube end -->
+                                                                <!-- community start -->
+                                                                <table border="0" cellspacing="0" cellpadding="0" class="community" width="20%" align="left">
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <a href="javascript:void(0)">
+                                                                                <img src="img/ico-community.png" alt="community" width="22px">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <!-- community end -->
                                                             </td>
                                                         </tr>
                                                     </table>
-                                                    <!-- twitter end -->
-                                                    <!-- facebook start -->
-                                                    <table border="0" cellspacing="0" cellpadding="0" class="facebook" width="20%" align="left">
-                                                        <tr>
-                                                            <td align="left">
-                                                                <a href="https://facebook.com">
-                                                                    <img src="img/ico-facebook.png" alt="facebook" width="22px">
-                                                                </a>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                    <!-- facebook end -->
-                                                    <!-- instagram start -->
-                                                    <table border="0" cellspacing="0" cellpadding="0" class="instagram" width="20%" align="left">
-                                                        <tr>
-                                                            <td align="left">
-                                                                <a href="https://instagram.com">
-                                                                    <img src="img/ico-instagram.png" alt="instagram" width="22px">
-                                                                </a>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                    <!-- instagram end -->
-                                                    <!-- youtube start -->
-                                                    <table border="0" cellspacing="0" cellpadding="0" class="youtube" width="20%" align="left">
-                                                        <tr>
-                                                            <td align="left">
-                                                                <a href="https://youtube.com">
-                                                                    <img src="img/ico-youtube.png" alt="youtube" width="22px">
-                                                                </a>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                    <!-- youtube end -->
-                                                    <!-- community start -->
-                                                    <table border="0" cellspacing="0" cellpadding="0" class="community" width="20%" align="left">
-                                                        <tr>
-                                                            <td align="left">
-                                                                <a href="javascript:void(0)">
-                                                                    <img src="img/ico-community.png" alt="community" width="22px">
-                                                                </a>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                    <!-- community end -->
+                                                    <!-- social media end -->
                                                 </td>
                                             </tr>
                                         </table>
                                         <!-- social media container end -->
                                         <!-- mobile app container start -->
-                                        <table border="0" cellspacing="0" cellpadding="0" class="mobile-app" width="33.33%" align="left" >
+                                        <table border="0" cellspacing="0" cellpadding="0" class="mobile-app-container" width="33.33%" align="left" >
                                             <tr>
                                                 <td style="padding-bottom: 5px;">
                                                     <h4 style="margin: 0; color: #616161; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 700; font-size: 11px;">Mobile app</h4>
